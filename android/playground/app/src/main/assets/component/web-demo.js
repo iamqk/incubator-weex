@@ -2261,6 +2261,7 @@
 	module.exports = {
 	    methods: {
 	        goback: function goback() {
+		    var $webview = __weex_require__('@weex-module/webview');
 	            var webElement = this.$el('webview');
 	            $webview.goBack(webElement.ref);
 	        },
